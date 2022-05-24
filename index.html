@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbrush Course</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="main.js"></script>
+  </head>
+  <body>
+    <div class="controls" id="controls">
+      <label for="hue">Hue</label>
+      <input type="range" id="hue" class="controls__slider" min="0" max="359" step="1" name="hue">
+      <label for="scatter">Scatter</label>
+      <input type="range" id="scatter" class="controls__slider" min="3" max="20" name="scatter">
+      <span id="show-brush" class="controls__show"></span>
+      <button id="clear" class="controls__button">Clear</button>
+      <button id="undo" class="controls__button">Undo</button>
+    </div>
+    <canvas id="canvas"></canvas>
+  </body>
+</html>
